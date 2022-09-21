@@ -1,0 +1,155 @@
+import {
+    Badge,
+    Button,
+    Center,
+    Flex,
+    Heading,
+    Image,
+    Link,
+    Stack,
+    Text,
+    useColorModeValue,
+  } from '@chakra-ui/react';
+  
+  export default function Plantas() {
+    return (
+      <Center py={6}>
+        <Stack
+          borderWidth="1px"
+          borderRadius="lg"
+          w={{ sm: '100%', md: '540px' }}
+          height={{ sm: '476px', md: '20rem' }}
+          direction={{ base: 'column', md: 'row' }}
+          bg={useColorModeValue('white', 'gray.900')}
+          boxShadow={'2xl'}
+          padding={4}>
+          <Flex flex={1} bg="blue.200">
+            <Image
+              objectFit="cover"
+              boxSize="100%"
+              src={
+                'https://www.tuacasa.com.br/wp-content/uploads/2020/04/plantas-para-apartamento-8-730x913.jpg'
+              }
+            />
+          </Flex>
+          <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Heading fontSize={'2xl'} fontFamily={'body'}>
+              Antúrio
+            </Heading>
+            <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
+              Anthurium andraeanum
+            </Text>
+            <Text
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+             Possui folhas verdes e brilhantes, flor em formato de coração e pistão característico. 
+             Suas flores pode ter diversas cores, entre elas branca, vermelha, rosa, salmão e verde.
+             Pode medir entre 0.3 a 0.6 metros, necessita de luz difusa e sombra, precisa ser regada a cada 2 dias.
+             </Text>
+            </Stack>
+  
+            <Flex flex={1} bg="blue.200">
+            <Image
+              objectFit="cover"
+              boxSize="100%"
+              src={
+                'https://www.tuacasa.com.br/wp-content/uploads/2020/04/plantas-para-apartamento-13-730x730.jpg'
+              }
+            />
+          </Flex>
+            <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Heading fontSize={'2xl'} fontFamily={'body'}>
+              Begônia
+            </Heading>
+            <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
+              Belgonia elatior
+            </Text>
+            <Text
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+             Encanta muitas pessoas com suas folhas suculentas e flores que lembram pequenas
+             rosas, fornando pequenos buquês. Suas cores mais comuns são banco, rosa, amarelo, vermelho e salmão~.
+             De pequeno porte, pode chegar a 0.3 a 0.4 metros. Precisa de luz difusa e de ser regada a cada 4 dias.
+            </Text>
+           </Stack>
+
+           <Flex flex={1} bg="blue.200">
+            <Image
+              objectFit="cover"
+              boxSize="100%"
+              src={
+                'https://www.tuacasa.com.br/wp-content/uploads/2020/04/plantas-para-apartamento-18.jpg'
+              }
+            />
+          </Flex>
+           <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Heading fontSize={'2xl'} fontFamily={'body'}>
+              Bromélia-zebra
+            </Heading>
+            <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
+              Aechmea chantinii
+            </Text>
+            <Text
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+              Suas principais caracteristicas são folhas longas e rígidas com aspecto
+              zebrado e flores vermelhas. Chega de 0.4 até 0.9 metros, precisa de meia zombra e necessita de água constantemente no corpo da planta não nas raízes.
+            </Text>
+            </Stack>
+
+            <Flex flex={1} bg="blue.200">
+            <Image
+              objectFit="cover"
+              boxSize="100%"
+              src={
+                'https://www.tuacasa.com.br/wp-content/uploads/2020/04/plantas-para-apartamento-21-730x913.jpg'
+              }
+            />
+          </Flex>
+            <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Heading fontSize={'2xl'} fontFamily={'body'}>
+              Caetê-redondo
+            </Heading>
+            <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
+              Calathea orbifolia
+            </Text>
+            <Text
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+              Como o nome já representa, possui folhas arredondadas de cor verde escuro com fixas alternadas de cinza-prateado.
+              Crece ao máximo 0.4 metros, é uma planta de sombra e presisa ser regada apenas quando o solo estiver seco.
+            </Text>
+            </Stack>
+
+        </Stack>
+      </Center>
+    );
+  }
